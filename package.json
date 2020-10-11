@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/vivekghanchi/node-scrapper/issues"
   },
-  "homepage": "https://github.com/vivekghanchi/node-scrapper#readme"
+  "homepage": "https://github.com/vivekghanchi/node-scrapper#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9"
+  }
 }
