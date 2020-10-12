@@ -1,13 +1,14 @@
 const express = require('express');
 const http = require('http');
-const URL = require('url');
 const mongoose = require('mongoose');
 const scrapper = require('./scrapper');
 const scraperSchema = require('./models/scrapper-schema');
 const config = require('./config');
 const app = express();
 
-let mongoCon;
+global.mongoCon;
+
+http.globalAgent.maxSockets = 5;
 
 // db connection
 const MongoURI = process.env.MONGO_URL || config.MongoURI;
